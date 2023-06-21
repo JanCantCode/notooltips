@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "notooltips",
+  "version": "${version}",
+  "name": "notooltips",
+  "description": "",
+  "authors": [],
+  "contact": {
+    "repo": "https://github.com/itsja/notooltips"
+  },
+  "license": "All-Rights-Reserved",
+  "icon": "assets/notooltips/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "com.romies.notooltips.client.NotooltipsClient"
+    ],
+    "main": [
+      "com.romies.notooltips.Notooltips"
+    ]
+  },
+  "mixins": [
+    "notooltips.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
